@@ -1,0 +1,131 @@
+body {
+    background: hsl(0,0%,13%);
+    color: white;
+    font-family: 'Nunito', sans-serif;
+}
+
+.heroSvg {
+    position: absolute;
+    z-index: 0;
+    left: -55%;
+    top: -8%;
+    width: 150%;
+}
+
+.content {
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 75%;
+    position: relative;
+    z-index: 1;
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    .quote-container {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+
+        .avatar {
+            width: 25px;
+            height: 25px;
+            background: grey;
+            border-radius: 50%;
+            place-content: center;
+        }
+
+        p {
+            margin: 0 .5em;
+            font-size: 1em;
+        }
+    }
+
+    .cta {
+        display: inline-block;
+        font-family: 'Farsan', cursive;
+        font-size: 1em;
+        letter-spacing: 1px;
+        margin-top: 2.5em;
+        background: hsl(197,96%,45%);
+        color: white;
+        text-decoration: none;
+        padding: .5em 1em;
+        border-radius: 25px;
+        font-weight: bold;
+        border: 3px solid transparent;
+        transition: .5s ease border;
+
+        &:hover {
+            border: 3px solid white;
+        }
+    }
+}
+
+.projectsSectionSvg {
+    position: absolute;
+    left: 0;
+    margin-top: 75px;
+}
+
+
+@media (min-width: 840px) {
+    body {
+        font-size: 22px;
+        overflow-x: hidden;
+    }
+
+    .content {
+        text-align: left;
+        width: 80%;
+        margin: 10em auto 15em auto;
+
+        h1 {
+            width: 50%;
+        }
+
+        .quote-container {
+            display: flex;
+            place-content: unset;
+    
+            p {
+                margin-top: 0;
+            }
+        }
+    }
+
+    .heroSvg {
+        left: unset;
+        right: -5%;
+        top: -8%;
+        width: 1200px;
+    }
+}
+
+@media screen and(min-width: 1220px) {
+    .heroSvg {
+        position: absolute;
+        z-index: 0;
+        left: unset;
+        right: 0;
+        top: -20%;
+        overflow: hidden;
+        width: 1400px;
+    }
+}
+
+
+@media screen and(min-width: 2000px) {
+    .heroSvg {
+        position: absolute;
+        z-index: 0;
+        left: unset;
+        right: -5%;
+        top: -20%;
+        overflow: hidden;
+        width: 1900px;
+    }
+}
