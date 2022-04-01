@@ -73,10 +73,8 @@ body {
 }
 
 .spacer {
-  aspect-ratio: 1440/1136;
   width: 100vw;
   background-repeat: no-repeat;
-  background-position: center;
   background-size: cover;
 }
 
@@ -119,17 +117,16 @@ body {
 }
 .skills {
   width: 80%;
-  margin: 10em auto 5em auto;
+  margin: 5em auto 5em auto;
   padding-top: 85px;
+  font-size: 14px;
 }
-
 .skills .skillsGrid {
   display: grid;
   grid-gap: 1rem;
-  grid-template-areas: "box1 box1 box2 box2 box3 box3" ". box4 box4 box4 box4 .";
+  grid-template-areas: "box1 box1 box2 box2 box3 box3" "box4 box4 box4 box5 box5 box5" ". box7 box6 box6 box8 .";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
-
 .skills .skillsGrid div {
   text-align: center;
   border: 1px solid #f4f7fa;
@@ -138,84 +135,154 @@ body {
   color: #d3dfe8;
   transition: all 0.5s ease;
 }
-
+.skills .skillsGrid div:hover {
+  cursor: default;
+}
 .skills .skillsGrid div h3 {
   color: #70acc9;
+  font-size: 20px;
 }
-
 .skills .skillsGrid div i {
   font-size: 4rem;
   transition: all 0.5s ease;
+  margin-bottom: 8px;
 }
-
 .skills .skillsGrid div ul {
   list-style: none;
   text-transform: capitalize;
 }
-
 .skills .skillsGrid div li {
   margin: 1rem 0;
   font-size: 1.2rem;
 }
-
 .skills .skillsGrid div:first-of-type {
   grid-area: box1;
 }
-
 .skills .skillsGrid div:first-of-type:hover {
   border-color: #f27641;
 }
-
 .skills .skillsGrid div:first-of-type:hover > i {
   color: #f27641;
 }
-
 .skills .skillsGrid div:nth-of-type(2) {
   grid-area: box2;
 }
-
 .skills .skillsGrid div:nth-of-type(2):hover {
   border-color: #6a85ec;
 }
-
 .skills .skillsGrid div:nth-of-type(2):hover > i {
   color: #6a85ec;
 }
-
 .skills .skillsGrid div:nth-of-type(3) {
   grid-area: box3;
 }
-
 .skills .skillsGrid div:nth-of-type(3):hover {
   border-color: #f2e066;
 }
-
 .skills .skillsGrid div:nth-of-type(3):hover > i {
   color: #f2e066;
 }
-
-.skills .skillsGrid div:last-of-type {
+.skills .skillsGrid div:nth-of-type(4) {
   grid-area: box4;
 }
-
-.skills .skillsGrid div:last-of-type:hover {
+.skills .skillsGrid div:nth-of-type(4):hover {
   border-color: #41B883;
 }
-
-.skills .skillsGrid div:last-of-type:hover > i {
+.skills .skillsGrid div:nth-of-type(4):hover > i {
   color: #41B883;
 }
-
-body .headersStyle {
-  color: white;
-  font-family: "Nunito", sans-serif;
-  font-size: 4rem;
-  margin-bottom: 2rem;
+.skills .skillsGrid div:nth-of-type(5) {
+  grid-area: box5;
+}
+.skills .skillsGrid div:nth-of-type(5):hover {
+  border-color: #61DBFB;
+}
+.skills .skillsGrid div:nth-of-type(5):hover > i {
+  color: #61DBFB;
+}
+.skills .skillsGrid div:nth-of-type(6) {
+  grid-area: box6;
+}
+.skills .skillsGrid div:nth-of-type(6):hover {
+  border-color: #3C873A;
+}
+.skills .skillsGrid div:nth-of-type(6):hover > i {
+  color: #3C873A;
+}
+.skills .skillsGrid div:nth-of-type(7) {
+  grid-area: box7;
+}
+.skills .skillsGrid div:nth-of-type(7):hover {
+  border-color: #C1BEBC;
+}
+.skills .skillsGrid div:nth-of-type(7):hover > i {
+  color: #C1BEBC;
+}
+.skills .skillsGrid div:nth-of-type(8) {
+  grid-area: box8;
+}
+.skills .skillsGrid div:nth-of-type(8):hover {
+  border-color: #F1502F;
+}
+.skills .skillsGrid div:nth-of-type(8):hover > i {
+  color: #F1502F;
 }
 
-body .headersStyle span {
-  font-size: 3rem;
+.header {
+  font-family: "Kalam", cursive;
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.headerStyle {
+  color: white;
+}
+.headerStyle span {
+  font-size: 4rem;
   color: #05a2e1;
+}
+
+.headerStyleInverse {
+  color: #212121;
+}
+.headerStyleInverse span {
+  font-size: 4rem;
+  color: white;
+}
+
+.projects {
+  width: 80%;
+  margin: 5em auto 5em auto;
+  padding-top: 125px;
+  min-height: 900px;
+}
+.projects .projectsGrid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "box1 box1 box2 box2 box3 box3" ". box4 box4 box5 box5 ." ". . box6 box6 . .";
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  margin-top: 40px;
+}
+.projects .projectsGrid div:nth-of-type(1) {
+  grid-area: box1;
+}
+.projects .projectsGrid div:nth-of-type(2) {
+  grid-area: box2;
+}
+.projects .projectsGrid div:nth-of-type(3) {
+  grid-area: box3;
+}
+.projects .projectsGrid div:nth-of-type(4) {
+  grid-area: box4;
+}
+.projects .projectsGrid div:nth-of-type(5) {
+  grid-area: box5;
+}
+.projects div {
+  width: 500px;
+  height: 300px;
+  background-color: white;
+  color: black;
 }
 
 @media screen and (min-width: 1220px) {
