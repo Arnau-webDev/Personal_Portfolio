@@ -2,6 +2,13 @@ body {
     background: hsl(0,0%,13%);
     color: white;
     font-family: 'Nunito', sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
 }
 
 .heroSvg {
@@ -72,6 +79,23 @@ body {
 }
 
 
+.spacer {
+    aspect-ratio: 1440 / 1136;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.layer1 {
+    background-image: url("../img/section-wave.svg");
+}
+
+.skills-container {
+    padding-top: 150px;
+}
+
+
 @media (min-width: 840px) {
     body {
         font-size: 22px;
@@ -105,6 +129,91 @@ body {
     }
 }
 
+.skills {
+    width: 80%;
+    margin: 10em auto 5em auto;
+    padding-top: 85px;
+}
+
+.skills .skillsGrid {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: "box1 box1 box2 box2 box3 box3" ". box4 box4 box4 box4 .";
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  }
+  .skills .skillsGrid div {
+    text-align: center;
+    border: 1px solid #f4f7fa;
+    border-radius: 10px;
+    padding: 1rem;
+    color: #d3dfe8;
+    transition: all 0.5s ease;
+  }
+  .skills .skillsGrid div h3 {
+    color: #70acc9;
+  }
+  .skills .skillsGrid div i {
+    font-size: 4rem;
+    transition: all 0.5s ease;
+  }
+  .skills .skillsGrid div ul {
+    list-style: none;
+    text-transform: capitalize;
+  }
+  .skills .skillsGrid div li {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+  .skills .skillsGrid div:first-of-type {
+    grid-area: box1;
+  }
+  .skills .skillsGrid div:first-of-type:hover {
+    border-color: #f27641;
+  }
+  .skills .skillsGrid div:first-of-type:hover > i {
+    color: #f27641;
+  }
+  .skills .skillsGrid div:nth-of-type(2) {
+    grid-area: box2;
+  }
+  .skills .skillsGrid div:nth-of-type(2):hover {
+    border-color: #6a85ec;
+  }
+  .skills .skillsGrid div:nth-of-type(2):hover > i {
+    color: #6a85ec;
+  }
+  .skills .skillsGrid div:nth-of-type(3) {
+    grid-area: box3;
+  }
+  .skills .skillsGrid div:nth-of-type(3):hover {
+    border-color: #f2e066;
+  }
+  .skills .skillsGrid div:nth-of-type(3):hover > i {
+    color: #f2e066;
+  }
+  .skills .skillsGrid div:last-of-type {
+    grid-area: box4;
+  }
+  .skills .skillsGrid div:last-of-type:hover {
+    border-color: #41B883;
+  }
+  .skills .skillsGrid div:last-of-type:hover > i {
+    color: #41B883;
+  }
+
+
+  body .headersStyle {
+    color: white;
+    font-family: 'Nunito', sans-serif; //change
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  body .headersStyle span {
+    font-size: 3rem;
+    color: #05a2e1;
+  }
+
 @media screen and(min-width: 1220px) {
     .heroSvg {
         position: absolute;
@@ -127,5 +236,9 @@ body {
         top: -20%;
         overflow: hidden;
         width: 1900px;
+    }
+    
+    .skills {
+        margin-top: 650px;
     }
 }
