@@ -124,8 +124,8 @@ body {
 .skills .skillsGrid {
   display: grid;
   grid-gap: 1rem;
-  grid-template-areas: "box1 box1 box2 box2 box3 box3" "box4 box4 box4 box5 box5 box5" ". box7 box6 box6 box8 .";
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas: "box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3" ". box5 box5 box5 box5 box5 box4 box4 box4 box4 box4 ." ". . box7 box7 box6 box6 box6 box6 box8 box8 . .";
+  grid-template-columns: repeat(12, 1fr);
 }
 .skills .skillsGrid div {
   text-align: center;
@@ -259,30 +259,44 @@ body {
 .projects .projectsGrid {
   display: grid;
   grid-gap: 1rem;
-  grid-template-areas: "box1 box1 box2 box2 box3 box3" ". box4 box4 box5 box5 ." ". . box6 box6 . .";
+  grid-template-areas: "box1 box1 box2 box2 box3 box3" "box4 box4 box5 box5 box6 box6";
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-top: 40px;
 }
-.projects .projectsGrid div:nth-of-type(1) {
+.projects .projectsGrid > div:nth-of-type(1) {
   grid-area: box1;
 }
-.projects .projectsGrid div:nth-of-type(2) {
+.projects .projectsGrid > div:nth-of-type(2) {
   grid-area: box2;
 }
-.projects .projectsGrid div:nth-of-type(3) {
+.projects .projectsGrid > div:nth-of-type(3) {
   grid-area: box3;
 }
-.projects .projectsGrid div:nth-of-type(4) {
+.projects .projectsGrid > div:nth-of-type(4) {
   grid-area: box4;
 }
-.projects .projectsGrid div:nth-of-type(5) {
+.projects .projectsGrid > div:nth-of-type(5) {
   grid-area: box5;
 }
-.projects div {
+.projects .projectsGrid > div:nth-of-type(6) {
+  grid-area: box6;
+}
+.projects .projectsGrid > div {
   width: 500px;
   height: 300px;
   background-color: white;
   color: black;
+}
+.projects .projectImage {
+  background-image: url("../img/test.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 75%;
+}
+.projects .projectInfo {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 1em;
 }
 
 @media screen and (min-width: 1220px) {
