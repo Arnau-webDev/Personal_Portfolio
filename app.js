@@ -14,3 +14,5 @@ tl.from(".card-bg", { delay: 0.5, scale: .2, transformOrigin: "center" }, "=.2")
 
 tl2.to(".whole-card", { y: 10, x: 3, repeat: -1, yoyo: true });
 tl3.from(".main-content", { opacity: 0, y: 40, stagger: .3 });
+
+
