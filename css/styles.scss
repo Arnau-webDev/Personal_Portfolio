@@ -416,7 +416,7 @@ a {
         left: 2px;
         right: 2px;
         height: 100%;
-        background: rgba(21,21,21,0.6); 
+        background: rgba(21,21,21,0.7); 
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -467,10 +467,10 @@ a {
             border: 2px solid white;
             border-radius: 10px;
             padding: 5px 0;
-            transition: background-color .25s ease;
+            transition: background-color .35s ease;
 
             &:hover {
-                background-color: rgba(33, 33, 33, 0.6);
+                background-color: rgba(33, 33, 33, 0.8);
             }
         }
     }
