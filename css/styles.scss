@@ -287,7 +287,7 @@ a {
 .header {
     font-family: 'Kalam', cursive;
     font-size: 4rem;
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
 }
 
 .headerStyle {
@@ -344,15 +344,17 @@ a {
 
     .projectsGrid > div:nth-of-type(4) {
         grid-area: box4;
+        height: 350px;
     }
 
     .projectsGrid > div:nth-of-type(5) {
         grid-area: box5;
+        height: 350px;
     }
     
-    .projectsGrid > div:nth-of-type(6) {
-        grid-area: box6;
-    }
+    // .projectsGrid > div:nth-of-type(6) {
+    //     grid-area: box6;
+    // }
 
     .projectsGrid > div {
         position: relative;
@@ -376,7 +378,31 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
+
+        &__1 {
+            background: url("../img/pizza3.png");
+            background-size: cover;
+        }
+
+        &__2 {
+            background: url("../img/journalApp.png");
+            background-size: cover;
+        }
+        
+        &__3 {
+            background: url("../img/dolla3.png");
+            background-size: cover;
+        }
+        
+        &__4 {
+            background: url("../img/champs.png");
+            background-size: cover;
+        }
+        
+        &__5 {
+            background: url("../img/memories.png");
+            background-size: cover;
+        }
     }
 
     .hiddenProjectInfo {
@@ -385,7 +411,7 @@ a {
         left: 2px;
         right: 2px;
         height: 100%;
-        background: rgba(21,21,21,0.6);
+        background: rgba(21,21,21,0.6); 
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -393,6 +419,17 @@ a {
         justify-content: center;
         opacity: 0;
         transition: opacity .25s ease;
+        text-align: center; 
+
+        & > h3 {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin-bottom: .25em;
+        }
+
+        & > p {
+            width: 90%;
+        }
 
         & > * {
             transform: translateY(60px);
