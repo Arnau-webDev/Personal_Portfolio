@@ -88,6 +88,29 @@ a {
     margin-top: 75px;
 }
 
+.header {
+    font-family: 'Kalam', cursive;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.headerStyle {
+    color: white;
+
+    span {
+        font-size: 4rem;
+        color: #05a2e1;
+    }
+}
+
+.headerStyleInverse {
+    color: #212121;
+
+    span {
+        font-size: 4rem;
+        color: white;
+    }
+}
 
 .spacer {
     // aspect-ratio: 1440 / 1136;
@@ -98,6 +121,10 @@ a {
 
 .layer1 {
     background-image: url("../img/section-wave.svg");
+}
+
+.layer2 {
+    background-image: url("../img/waveEnd.svg");
 }
 
 .skills-container {
@@ -159,7 +186,7 @@ a {
         border-radius: 10px;
         padding: 1rem;
         color: #d3dfe8;
-        transition: all 0.5s ease;
+        transition: all 0.3s ease;
 
         &:hover {
             cursor: default;
@@ -264,7 +291,8 @@ a {
     }
 
     .skillsGrid div:nth-of-type(7):hover {
-        border-color: #C1BEBC;
+        // border-color: #C1BEBC;
+        border-color: #dfac8a;
     }
 
     .skillsGrid div:nth-of-type(7):hover>i {
@@ -284,37 +312,14 @@ a {
     }
 }
 
-.header {
-    font-family: 'Kalam', cursive;
-    font-size: 4rem;
-    margin-bottom: 2rem;
-}
-
-.headerStyle {
-    color: white;
-
-    span {
-        font-size: 4rem;
-        color: #05a2e1;
-    }
-}
-
-.headerStyleInverse {
-    color: #212121;
-
-    span {
-        font-size: 4rem;
-        color: white;
-    }
-}
 
 .projects {
     width: 80%;
-    margin: 5em auto 5em auto;
+    margin: 5em auto 0em auto;
     padding-top: 185px;
     font-family: 'Kalam', cursive;
     font-size: 20px;
-    padding-bottom: 200px;
+    // padding-bottom: 200px;
 
     .projectsGrid {
         display: grid;
@@ -469,6 +474,48 @@ a {
             }
         }
     }
+}
+
+.contactContent {
+    padding-top: 15em;
+    width: 80%;
+    margin: 0 auto;
+    font-family: 'Kalam', cursive;
+
+    .contact__socials {
+        text-align: center;
+        margin: auto;
+        font-size: 1.1rem;
+        color: #fff;
+        width: 80%;
+      }
+
+      .contact__socials div {
+        margin: 1rem;
+      }
+
+      .contact__socials div h3 {
+        color: #0590c7;
+        text-transform: capitalize;
+        font-size: 2.2rem;
+      }
+
+      .contact__socials div:last-of-type {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .contact__socials i {
+        margin: 10px;
+        font-size: 1.8rem;
+        vertical-align: middle;
+        transition: all 0.25s ease;
+      }
+
+      .contact__socials i:hover {
+        transform: translateY(-3px);
+        color: #0590c7;
+      }
 }
 
 @media screen and(min-width: 1220px) {
