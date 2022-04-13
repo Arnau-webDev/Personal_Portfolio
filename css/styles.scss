@@ -23,6 +23,10 @@ a {
     color: inherit;
 }
 
+.mobileFix {
+    overflow-x: hidden;
+}
+
 .heroSvg {
     position: absolute;
     z-index: 0;
@@ -48,6 +52,7 @@ a {
         width: 100%;
         align-items: center;
         justify-content: center;
+        margin-top: 10px;
 
         .avatar {
             width: 25px;
@@ -98,6 +103,10 @@ a {
     @media(max-width: 800px) {
         font-size: 3rem;
         text-align: center;
+    };
+
+    @media(min-width: 2100px) {
+        margin-bottom: 3rem;
     };
 }
 
@@ -376,7 +385,7 @@ a {
 
 .projects {
     width: 80%;
-    max-width: 1600px;
+    max-width: 1700px;
     margin: 5em auto 0em auto;
     padding-top: 185px;
     font-family: 'Kalam', cursive;
@@ -385,6 +394,10 @@ a {
 
     @media screen and (max-width: 800px) {
         padding-top: 75px;
+    }
+
+    @media screen and (min-width: 2100px) {
+        padding-top: 350px;
     }
 
     .projectsGrid {
@@ -570,11 +583,13 @@ a {
 .contactContent {
     padding-top: 15em;
     width: 80%;
+    max-width: 1700px;
     margin: 0 auto;
     font-family: 'Kalam', cursive;
+    margin-bottom: 5em;
 
     @media(min-width: 2100px) {
-        padding-top: 18em;
+        padding-top: 24em;
     };
     
     @media screen and (max-width: 1170px) {
