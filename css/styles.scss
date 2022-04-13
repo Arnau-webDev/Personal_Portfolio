@@ -392,13 +392,14 @@ a {
     font-size: 20px;
     // padding-bottom: 200px;
 
+    @media screen and (min-width: 2400px) {
+        padding-top: 300px;
+    }
+
     @media screen and (max-width: 800px) {
         padding-top: 75px;
     }
 
-    @media screen and (min-width: 2100px) {
-        padding-top: 350px;
-    }
 
     .projectsGrid {
         display: grid;
@@ -588,7 +589,7 @@ a {
     font-family: 'Kalam', cursive;
     margin-bottom: 5em;
 
-    @media(min-width: 2100px) {
+    @media(min-width: 2400px) {
         padding-top: 24em;
     };
     

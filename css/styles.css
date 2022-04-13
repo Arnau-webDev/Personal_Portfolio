@@ -326,14 +326,14 @@ a {
   font-family: "Kalam", cursive;
   font-size: 20px;
 }
+@media screen and (min-width: 2400px) {
+  .projects {
+    padding-top: 300px;
+  }
+}
 @media screen and (max-width: 800px) {
   .projects {
     padding-top: 75px;
-  }
-}
-@media screen and (min-width: 2100px) {
-  .projects {
-    padding-top: 350px;
   }
 }
 .projects .projectsGrid {
@@ -487,7 +487,7 @@ a {
   font-family: "Kalam", cursive;
   margin-bottom: 5em;
 }
-@media (min-width: 2100px) {
+@media (min-width: 2400px) {
   .contactContent {
     padding-top: 24em;
   }
