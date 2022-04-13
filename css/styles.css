@@ -13,15 +13,12 @@ body {
   font-family: "Nunito", sans-serif;
   overflow-x: hidden;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-.mobileFix {
-  overflow-x: hidden;
 }
 
 .heroSvg {

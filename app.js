@@ -23,3 +23,7 @@ AOS.init({
         return window.innerWidth <= maxWidth;
     }
 });
+
+document.body.addEventListener("scroll", () => {
+    console.log("Hola");
+})
