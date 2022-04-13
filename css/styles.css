@@ -86,6 +86,12 @@ a {
   font-size: 4rem;
   margin-bottom: 2rem;
 }
+@media (max-width: 800px) {
+  .header {
+    font-size: 3rem;
+    text-align: center;
+  }
+}
 
 .headerStyle {
   color: white;
@@ -94,6 +100,11 @@ a {
   font-size: 4rem;
   color: #05a2e1;
 }
+@media (max-width: 800px) {
+  .headerStyle span {
+    font-size: 3rem;
+  }
+}
 
 .headerStyleInverse {
   color: #212121;
@@ -101,6 +112,11 @@ a {
 .headerStyleInverse span {
   font-size: 4rem;
   color: white;
+}
+@media (max-width: 800px) {
+  .headerStyleInverse span {
+    font-size: 3rem;
+  }
 }
 
 .spacer {
@@ -119,6 +135,11 @@ a {
 
 .skills-container {
   padding-top: 115px;
+}
+@media screen and (max-width: 800px) {
+  .skills-container {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: 840px) {
@@ -152,6 +173,7 @@ a {
 }
 .skills {
   width: 80%;
+  max-width: 1700px;
   margin: 5em auto 5em auto;
   padding-top: 85px;
   font-size: 14px;
@@ -159,8 +181,26 @@ a {
 .skills .skillsGrid {
   display: grid;
   grid-gap: 1rem;
-  grid-template-areas: "box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3" ". box5 box5 box5 box5 box5 box4 box4 box4 box4 box4 ." ". . box7 box7 box6 box6 box6 box6 box8 box8 . .";
   grid-template-columns: repeat(12, 1fr);
+  grid-template-areas: "box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3" ". box5 box5 box5 box5 box5 box4 box4 box4 box4 box4 ." ". . box7 box7 box6 box6 box6 box6 box8 box8 . .";
+}
+@media screen and (max-width: 1725px) {
+  .skills .skillsGrid {
+    grid-template-areas: "box1 box1 box1 box1 box2 box2 box2 box2 box3 box3 box3 box3" "box5 box5 box5 box5 box5 box5 box4 box4 box4 box4 box4 box4" "box7 box7 box7 box7 box6 box6 box6 box6 box8 box8 box8 box8";
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .skills .skillsGrid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "box1 box1 box2 box2" "box3 box3 box4 box4" "box5 box5 box6 box6" "box7 box7 box8 box8";
+  }
+}
+@media screen and (max-width: 800px) {
+  .skills .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "box1 box1 " "box2 box2 " "box3 box3 " "box4 box4 " "box5 box5 " "box6 box6 " "box7 box7 " "box8 box8 ";
+  }
 }
 .skills .skillsGrid div {
   text-align: center;
@@ -189,6 +229,11 @@ a {
 .skills .skillsGrid div li {
   margin: 1rem 0;
   font-size: 1.2rem;
+}
+@media screen and (max-width: 1170px) {
+  .skills .skillsGrid div li {
+    font-size: 1rem;
+  }
 }
 .skills .skillsGrid div:first-of-type {
   grid-area: box1;
@@ -265,16 +310,34 @@ a {
 
 .projects {
   width: 80%;
+  max-width: 1600px;
   margin: 5em auto 0em auto;
   padding-top: 185px;
   font-family: "Kalam", cursive;
   font-size: 20px;
 }
+@media screen and (max-width: 800px) {
+  .projects {
+    padding-top: 75px;
+  }
+}
 .projects .projectsGrid {
   display: grid;
   grid-gap: 3rem;
   grid-template-areas: "box1 box1 box2 box2 box3 box3" "box4 box4 box4 box5 box5 box5";
-  grid-auto-columns: 1fr;
+  grid-template-columns: repeat(6, 1fr);
+}
+@media (max-width: 1600px) {
+  .projects .projectsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "box1 box2" "box3 box4" "box5 box5";
+  }
+}
+@media (max-width: 1250px) {
+  .projects .projectsGrid {
+    grid-template-columns: 1fr;
+    grid-template-areas: "box1" "box2" "box3" "box4" "box5";
+  }
 }
 .projects .projectsGrid > div {
   margin-top: 2rem;
@@ -290,11 +353,19 @@ a {
 }
 .projects .projectsGrid > div:nth-of-type(4) {
   grid-area: box4;
-  height: 350px;
+}
+@media (min-width: 1600px) {
+  .projects .projectsGrid > div:nth-of-type(4) {
+    height: 350px;
+  }
 }
 .projects .projectsGrid > div:nth-of-type(5) {
   grid-area: box5;
-  height: 350px;
+}
+@media (min-width: 1250px) {
+  .projects .projectsGrid > div:nth-of-type(5) {
+    height: 350px;
+  }
 }
 .projects .projectsGrid > div {
   position: relative;
@@ -399,6 +470,16 @@ a {
   margin: 0 auto;
   font-family: "Kalam", cursive;
 }
+@media (min-width: 2100px) {
+  .contactContent {
+    padding-top: 18em;
+  }
+}
+@media screen and (max-width: 1170px) {
+  .contactContent {
+    padding-top: 12em;
+  }
+}
 .contactContent .contact__socials {
   text-align: center;
   margin: auto;
@@ -412,7 +493,17 @@ a {
 .contactContent .contact__socials div h3 {
   color: #0590c7;
   text-transform: capitalize;
-  font-size: 2.2rem;
+  font-size: 2rem;
+}
+@media (max-width: 1170px) {
+  .contactContent .contact__socials div h3 {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 800px) {
+  .contactContent .contact__socials div h3 {
+    font-size: 1.3rem;
+  }
 }
 .contactContent .contact__socials div:last-of-type {
   display: flex;
