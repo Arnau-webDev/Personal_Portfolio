@@ -376,7 +376,7 @@ a {
 }
 @media (min-width: 1600px) {
   .projects .projectsGrid > div:nth-of-type(4) {
-    height: 350px;
+    height: 380px;
   }
 }
 .projects .projectsGrid > div:nth-of-type(5) {
@@ -384,7 +384,7 @@ a {
 }
 @media (min-width: 1250px) {
   .projects .projectsGrid > div:nth-of-type(5) {
-    height: 350px;
+    height: 380px;
   }
 }
 .projects .projectsGrid > div {
@@ -413,7 +413,7 @@ a {
   background-size: cover;
 }
 .projects .projectsCard-bg__2 {
-  background: url("../img/journalApp.png");
+  background: url("../img/journal.png");
   background-size: cover;
 }
 .projects .projectsCard-bg__3 {
@@ -421,7 +421,7 @@ a {
   background-size: cover;
 }
 .projects .projectsCard-bg__4 {
-  background: url("../img/champs.png");
+  background: url("../img/champs4.png");
   background-size: cover;
 }
 .projects .projectsCard-bg__5 {

@@ -460,7 +460,7 @@ a {
         grid-area: box4;
         
         @media(min-width: 1600px) {
-            height: 350px;
+            height: 380px;
         }
     }
 
@@ -468,7 +468,7 @@ a {
         grid-area: box5;
 
         @media(min-width: 1250px) {
-            height: 350px;
+            height: 380px;
         }
     }
     
@@ -505,7 +505,7 @@ a {
         }
 
         &__2 {
-            background: url("../img/journalApp.png");
+            background: url("../img/journal.png");
             background-size: cover;
         }
         
@@ -515,7 +515,7 @@ a {
         }
         
         &__4 {
-            background: url("../img/champs.png");
+            background: url("../img/champs4.png");
             background-size: cover;
         }
         
